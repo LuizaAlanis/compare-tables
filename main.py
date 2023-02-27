@@ -1,18 +1,16 @@
 def intersect_lists(list_1, list_2):
-    """
-    Retorna os valores em comum entre duas listas.
-    """
+    # Return common values in both lists
     return list(set(list_1) & set(list_2))
 
 
 def format_input(list_input):
-    # Separar elementos da lista usando o método split()
+    # Using split() to separate elements
     elements = list_input.split(",")
 
-    # Inicializar um novo array de strings
+    # Create new string array
     array_strings = []
 
-    # Adicionar cada elemento da lista ao array de strings
+    # Put each element in string
     for element in elements:
         array_strings.append(str(element))
 
